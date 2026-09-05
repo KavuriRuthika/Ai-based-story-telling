@@ -25,7 +25,7 @@ class LLMService:
 
         self.model = os.getenv(
             "GEMINI_TEXT_MODEL",
-            "gemini-3.7-flash"
+            "gemini-3.6-flash"
         )
 
     def _clean_json(self, text: str) -> Dict[str, Any]:

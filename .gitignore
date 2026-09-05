@@ -1,42 +1,53 @@
-# Environment variables
+@"
+# Environment / API keys
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
-# Backend
-backend/venv/
-backend/__pycache__/
-backend/*.pyc
-backend/.pytest_cache/
-backend/*.db
-backend/instance/
-backend/.coverage
-backend/htmlcov/
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
 
-# Frontend
+# Node
+node_modules/
 frontend/node_modules/
-frontend/dist/
-frontend/.vite/
-frontend/coverage/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-*.code-workspace
+# Build
+dist/
+dist-ssr/
+build/
 
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
+# Generated files
+backend/generated_images/
+backend/generated_videos/
+backend/media/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
 # Logs
 *.log
-logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Temp files
-*.tmp
-temp/
+# Editors
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+Thumbs.db
+"@ | Set-Content -Encoding UTF8 .gitignore
