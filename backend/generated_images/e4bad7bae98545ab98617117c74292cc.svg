@@ -1,0 +1,280 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1280"
+        height="720"
+        viewBox="0 0 1280 720">
+
+        <defs>
+            <linearGradient
+                id="sky"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1">
+
+                <stop
+                    offset="0%"
+                    stop-color="#21144f"/>
+
+                <stop
+                    offset="100%"
+                    stop-color="#6b4fb3"/>
+
+            </linearGradient>
+
+            <linearGradient
+                id="ground"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1">
+
+                <stop
+                    offset="0%"
+                    stop-color="#285943"/>
+
+                <stop
+                    offset="100%"
+                    stop-color="#123326"/>
+
+            </linearGradient>
+        </defs>
+
+        <rect
+            width="1280"
+            height="720"
+            fill="url(#sky)"/>
+
+        <circle
+            cx="1060"
+            cy="130"
+            r="65"
+            fill="#fff3b0"
+            opacity="0.9"/>
+
+        <circle
+            cx="180"
+            cy="120"
+            r="5"
+            fill="white"/>
+
+        <circle
+            cx="260"
+            cy="180"
+            r="4"
+            fill="white"/>
+
+        <circle
+            cx="390"
+            cy="90"
+            r="5"
+            fill="white"/>
+
+        <circle
+            cx="900"
+            cy="200"
+            r="4"
+            fill="white"/>
+
+        <path
+            d="M0 510
+               Q180 420 350 500
+               T700 490
+               T1050 470
+               T1280 500
+               L1280 720
+               L0 720 Z"
+            fill="url(#ground)"/>
+
+        <!-- Trees -->
+
+        <g>
+            <rect
+                x="90"
+                y="390"
+                width="45"
+                height="190"
+                rx="15"
+                fill="#5a3925"/>
+
+            <circle
+                cx="112"
+                cy="350"
+                r="95"
+                fill="#2f8b57"/>
+
+            <circle
+                cx="60"
+                cy="390"
+                r="60"
+                fill="#3ca968"/>
+
+            <circle
+                cx="165"
+                cy="395"
+                r="60"
+                fill="#237448"/>
+        </g>
+
+        <g>
+            <rect
+                x="1110"
+                y="390"
+                width="45"
+                height="190"
+                rx="15"
+                fill="#5a3925"/>
+
+            <circle
+                cx="1132"
+                cy="350"
+                r="95"
+                fill="#2f8b57"/>
+
+            <circle
+                cx="1080"
+                cy="390"
+                r="60"
+                fill="#3ca968"/>
+
+            <circle
+                cx="1185"
+                cy="395"
+                r="60"
+                fill="#237448"/>
+        </g>
+
+        <!-- Hero -->
+
+        <circle
+            cx="640"
+            cy="330"
+            r="70"
+            fill="#f3bd91"/>
+
+        <path
+            d="M570 325
+               Q640 220 710 325
+               Q690 270 640 255
+               Q590 270 570 325"
+            fill="#3a241c"/>
+
+        <circle
+            cx="615"
+            cy="330"
+            r="7"
+            fill="#222"/>
+
+        <circle
+            cx="665"
+            cy="330"
+            r="7"
+            fill="#222"/>
+
+        <path
+            d="M615 370
+               Q640 390 665 370"
+            fill="none"
+            stroke="#7a3f3f"
+            stroke-width="6"
+            stroke-linecap="round"/>
+
+        <rect
+            x="570"
+            y="400"
+            width="140"
+            height="150"
+            rx="35"
+            fill="#ffb84d"/>
+
+        <rect
+            x="590"
+            y="540"
+            width="40"
+            height="90"
+            rx="15"
+            fill="#284c8c"/>
+
+        <rect
+            x="650"
+            y="540"
+            width="40"
+            height="90"
+            rx="15"
+            fill="#284c8c"/>
+
+        <!-- Magic stars -->
+
+        <text
+            x="470"
+            y="280"
+            font-size="42"
+            fill="#ffe88a">
+            ✦
+        </text>
+
+        <text
+            x="800"
+            y="300"
+            font-size="36"
+            fill="#ffe88a">
+            ✧
+        </text>
+
+        <text
+            x="850"
+            y="420"
+            font-size="30"
+            fill="#fff3b0">
+            ✦
+        </text>
+
+        <!-- Story title -->
+
+        <rect
+            x="270"
+            y="35"
+            width="740"
+            height="95"
+            rx="30"
+            fill="#140c2d"
+            opacity="0.82"/>
+
+        <text
+            x="640"
+            y="95"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="38"
+            font-weight="bold"
+            fill="white">
+            A Heart Full of Starlight
+        </text>
+
+        <!-- Hero name -->
+
+        <text
+            x="640"
+            y="660"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="30"
+            font-weight="bold"
+            fill="white">
+            Lucky
+        </text>
+
+        <!-- Small scene description -->
+
+        <text
+            x="640"
+            y="700"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="18"
+            fill="#e5dcff">
+            Lucky flying his spaceship back toward Earth, looking out at the starry sky with a peaceful, fulfilled smile while a mag
+        </text>
+
+    </svg>
+    

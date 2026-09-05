@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./kathaquest.db
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ENABLE_VOICE_FEATURES=True
+      - ENABLE_IMAGE_GENERATION=True
+      - ENABLE_ADAPTIVE_LEARNING=True
+    volumes:
+      - ./backend:/app
+    command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - kathaquest-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm run dev -- --host
+    depends_on:
+      - backend
+    networks:
+      - kathaquest-network
+
+networks:
+  kathaquest-network:
+    driver: bridge

@@ -1,0 +1,86 @@
+/* Choice Button Styles */
+.choice-button-wrapper {
+  margin: 0.75rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.choice-button {
+  padding: 1rem 1.5rem;
+  border: 2px solid #667eea;
+  border-radius: 0.75rem;
+  background: white;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.choice-button:hover:not(.disabled) {
+  background: #f0f4ff;
+  border-color: #764ba2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.choice-button:active:not(.disabled) {
+  transform: translateX(3px);
+}
+
+.choice-button.correct {
+  border-color: #10b981;
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.choice-button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.choice-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hint-button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.hint-button:hover {
+  opacity: 1;
+}
+
+.choice-hint {
+  padding: 0.75rem;
+  background: #fef3c7;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: #92400e;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
