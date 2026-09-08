@@ -4,7 +4,7 @@ KathaQuest is an innovative, AI-based interactive storytelling platform designed
 
 ## 🌐 Live Demo
 
-🚀 **Live Demo:** https://ai-based-story-telling-dpklj3sdt.vercel.app/
+🚀 **Live Demo:** ai-based-story-telling.vercel.app
 
 ## 👥 Collaborators
 
