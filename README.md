@@ -2,6 +2,16 @@
 
 KathaQuest is an innovative, AI-based interactive storytelling platform designed to create personalized, adaptive learning experiences for children. Through immersive narratives in the magical world of Lumora, children embark on adventures that adapt to their learning styles and abilities.
 
+## 🌐 Live Demo
+
+🚀 **Live Demo:** https://ai-based-story-telling-dpklj3sdt.vercel.app/
+
+## 👥 Collaborators
+
+- @leelasri0906-art
+- @GayathriSai-07
+- @Madhuri-027
+
 ## 📋 Table of Contents
 
 - [Features](#features)
